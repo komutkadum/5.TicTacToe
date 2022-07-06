@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ecf0f1;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 450px;
+}
+
+.container .board {
+    display: grid;
+    width: 450px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container .board div {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #562f65;
+    cursor: pointer;
+    color: #e9f2f5;
+    text-align: center;
+    line-height: 150px;
+    font-size: 50px;
+    display: block;
+    background-color: #9b59b6;
+}
+
+.container .board div:hover {
+    background-color: #8e44ad;
+}
+
+.container .player-board {
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3d1f49;
+}
+
+.play-again-button {
+    padding: 10px 15px;
+    background-color: #10ac84;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.play-again-button:hover {
+    background-color: #109a77;
+}
+.play-again-button:active {
+    background-color: #0a7459;
+}
